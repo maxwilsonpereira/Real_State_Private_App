@@ -1,0 +1,84 @@
+.HomeImageContainer {
+  height: 800px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.LogoBox {
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+  margin-top: 200px;
+  width: 50%;
+  padding: 40px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  animation-name: movelogo;
+  animation-duration: 1.5s;
+}
+@keyframes movelogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.LogoImage {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.HomeImageContainer div {
+  color: black;
+  text-align: left;
+}
+.HomeImageContainer h2 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: normal;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* VERY LARGE MONITORS: */
+@media (min-width: 1400px) {
+  .LogoBox {
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .LogoBox {
+    width: 60%;
+  }
+}
+
+/* ***** MOBILE ***** */
+@media (max-width: 700px) {
+  .HomeImageContainer {
+    height: 650px;
+  }
+  .LogoBox {
+    margin-top: 150px;
+    width: 80%;
+    padding: 40px;
+  }
+  .HomeImageContainer h2 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: normal;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
+  }
+}
+@media (max-width: 360px) {
+  .HomeImageContainer h2 {
+    font-size: 1.4em;
+  }
+}

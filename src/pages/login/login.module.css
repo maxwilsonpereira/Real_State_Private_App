@@ -1,0 +1,95 @@
+.HomeImageContainer {
+  /* width: 100vw;
+  height: 100vh; */
+  width: 100%;
+  height: 750px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.LogoBox {
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 50%;
+  padding: 40px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  animation-name: movelogo;
+  animation-duration: 1s;
+}
+@keyframes movelogo {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.LogoImage {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.HomeImageContainer div {
+  color: black;
+  text-align: left;
+}
+.HomeImageContainer h2 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: normal;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
+}
+.FormStyle {
+  animation-name: moveform;
+  animation-duration: 1.5s;
+}
+@keyframes moveform {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.FormStyle input {
+  width: 80%;
+  max-width: 300px;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 15px 10px;
+  font-size: 1.5em;
+  color: #2f2f2f;
+  border-color: rgb(0, 0, 0);
+  border-width: 0px;
+  box-shadow: inset 0px 0px 5px 2px rgb(0, 0, 0);
+}
+
+/* ***** MOBILE ***** */
+@media (max-width: 700px) {
+  .HomeImageContainer {
+    height: 650px;
+  }
+  .LogoBox {
+    width: 80%;
+    padding: 40px;
+  }
+  .HomeImageContainer h2 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: normal;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
+  }
+}

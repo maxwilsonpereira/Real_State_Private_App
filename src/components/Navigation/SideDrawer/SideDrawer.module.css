@@ -1,0 +1,37 @@
+.SideDrawerContainer {
+  /* position: absolute; */
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  padding: 10px 0px;
+  z-index: 2;
+}
+.SideDrawerContainer a {
+  /* text-transform: none; */
+  display: inline-block;
+  padding: 10px;
+  margin: 1px;
+  width: 96%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.3em;
+}
+.SideDrawerContainer a:hover {
+  color: #ddfffa;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.LogoImg {
+  transform: translateX(-10%);
+  width: 90%;
+  padding: 10px 40px;
+}
+
+.SideDrawerIn {
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+.SideDrawerOut {
+  transition: transform 0.2s ease-out;
+  transform: translateY(-100%);
+}

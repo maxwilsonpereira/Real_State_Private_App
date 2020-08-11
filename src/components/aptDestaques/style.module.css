@@ -1,0 +1,102 @@
+.AppContainer {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-family: objektiv-mk2;
+}
+.sectionGrey {
+  background-color: #f3f3f3; /* SectionGrey */
+}
+.Title {
+  text-decoration: underline;
+  text-align: center;
+  color: #ae6e3d;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+.GridApartamentoLeft {
+  display: grid;
+  /* grid-template-columns: 65% 35%; */
+  grid-template-columns: 55% 40%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  column-gap: 20px;
+  padding: 10px;
+}
+.GridApartamentoRight {
+  display: grid;
+  /* grid-template-columns: 35% 65%; */
+  grid-template-columns: 40% 55%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  column-gap: 20px;
+  padding: 10px;
+}
+.GridApartamentoRight h1,
+.GridApartamentoLeft h1 {
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  color: #ae6e3d;
+}
+.GridApartamentoRight h2,
+.GridApartamentoLeft h2 {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  /* text-transform: uppercase; */
+  /* color: rgb(100, 100, 100); */
+  color: #ae6e3d;
+}
+.centeredAligned {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ApartamentoImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.FontColor {
+  text-transform: uppercase;
+  /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); */
+  color: #444444;
+}
+.lineGold {
+  border-top: 2px solid #ae6e3d;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mobileOnly {
+  display: none;
+}
+/* ***** MOBILE ***** */
+@media (max-width: 700px) {
+  .NotMobile {
+    display: none;
+  }
+  .GridApartamentoLeft,
+  .GridApartamentoRight {
+    grid-template-columns: 90%; /* 1 column */
+    padding: 5px;
+  }
+  .GridApartamentoRight div:nth-of-type(1) {
+    order: 2;
+  }
+  .mobileOnly {
+    display: inline;
+  }
+  .ApartamentoImg {
+    width: 100%;
+    height: 200px;
+  }
+}

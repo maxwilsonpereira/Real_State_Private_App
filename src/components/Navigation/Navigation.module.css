@@ -1,0 +1,124 @@
+.AppContainer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.NavContainer {
+  position: fixed;
+  z-index: 2;
+}
+.backgroundOnScroll {
+  background-color: #000000;
+  opacity: 0.7;
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.NavigationItems {
+  display: flex;
+  padding: 20px 60px;
+  /* justify-content: center; */
+  /* text-align: center; */
+  list-style: none;
+}
+.NavigationItem {
+  list-style: none !important;
+}
+.NavigationItem a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-left: 12px;
+  margin-right: 12px;
+  transition: 0.2s;
+}
+.NavigationItem a:hover {
+  color: #ddfffa;
+}
+.NavigationItem a.active {
+  color: #63fbe5;
+  /* border-bottom: 4px solid white; */
+}
+.NavigationItem a.activeMobile {
+  color: #63fbe5;
+  border-bottom: none;
+}
+.LogoImg {
+  padding: 10px;
+}
+/* BARS class for the 3 lines Mobile Nav */
+.Bars {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: fixed;
+  opacity: 0.6;
+  z-index: 2;
+  /* position: absolute; */
+  top: 15px;
+  right: 15px;
+  color: #444444;
+  transition: 0.2s;
+}
+.Bars:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  color: #02447e;
+}
+.BarVertical {
+  border-left: 1px solid #444444;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.OlaUserDesktop {
+  color: #8f2c31;
+  display: inline-block;
+  transform: translateY(-25%);
+}
+
+@media (max-width: 1000px) {
+  .FlexboxNavigation {
+    flex-direction: column;
+  }
+}
+/* HIDE NAV TO SHOW SIDEDRAWER FOR MOBILE */
+@media (max-width: 700px) {
+  .NavigationItems {
+    display: none;
+  }
+  .MobileDontShow {
+    display: none;
+  }
+  .backgroundOnScroll {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .LogoImg {
+    width: 80%;
+  }
+}
+/* HIDE NAV TO SHOW SIDEDRAWER FOR MOBILE */
+@media (min-width: 701px) {
+  .Bars {
+    display: none;
+  }
+  .DesktopDontShow {
+    display: none;
+  }
+  .NavMobile {
+    display: none;
+  }
+}
+
+/* VERY LARGE MONITORS: */
+@media (min-width: 1400px) {
+  .NavigationItem a {
+    font-size: 25px;
+  }
+}

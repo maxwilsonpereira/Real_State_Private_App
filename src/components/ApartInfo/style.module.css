@@ -1,0 +1,206 @@
+.Container {
+  max-width: 950px;
+  border-radius: 20px;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: objektiv-mk2;
+}
+
+.Container h1 {
+  text-decoration: underline;
+  /* text-align: center; */
+  color: #ae6e3d;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+.Container h2 {
+  font-size: 1.8em;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0);
+}
+.Container h3 {
+  font-size: 1.6em;
+  font-weight: normal;
+  text-shadow: 1px 0.5px 0.5px rgba(0, 0, 0, 0.7);
+  color: #ae6e3d;
+}
+.Container h4 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  text-shadow: 0.6px 0.5px 0.5px rgba(0, 0, 0, 0.7);
+  color: rgb(100, 100, 100);
+}
+.fontDark {
+  text-shadow: 0.6px 0.5px 0.5px rgba(0, 0, 0, 0.7);
+  color: rgb(100, 100, 100);
+}
+.ContainerLocalizacao {
+  max-width: 950px;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: objektiv-mk2;
+}
+.ContainerLocalizacao h1 {
+  text-decoration: underline;
+  /* text-align: center; */
+  color: #ae6e3d;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.GridInformacoes {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  box-sizing: border-box;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  column-gap: 10px;
+  /* padding: 10px; */
+}
+.GridInformacoes h3 {
+  padding: 3px 0px;
+}
+.GridInformacoes h4 {
+  padding: 5px 5px;
+}
+.HorizontalLine {
+  width: 100%;
+}
+.ImageContainer {
+  height: 500px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  /* background-attachment: fixed; */
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ImageContainer div {
+  color: black;
+  text-align: left;
+}
+.ImageContainer h2 {
+  font-size: 2em;
+  line-height: 1em;
+  color: #ae6e3d;
+  font-weight: normal;
+  text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 15px 15px 0;
+  margin-top: 300px;
+  width: 70%;
+  padding: 40px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  animation-name: movelogo;
+  animation-duration: 1.5s;
+}
+.GridContatoBox {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50% 50%;
+  background-color: #f3f3f3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+.colorsWebSite {
+  color: #ae6e3d; /* GOLD FONT */
+  color: #63fbe5;
+  color: #8f2c31;
+  color: #0155a0; /* hover */
+  color: #aa9385; /* Section Title */
+  color: #444444;
+  color: #fb5f2e; /* DISCOUNT */
+  background-color: #31ae75;
+  color: #e8ba3c;
+  background-color: #145a83; /* Comprar Declaração Box */
+  background-color: #033959; /* FOOTER */
+  background-color: #f3f3f3; /* SectionGrey */
+  background-color: #535353; /* SectionGreyDark */
+  background-color: #145a83; /* SectionBlueDark */
+}
+.FullWidth {
+  width: 100%;
+}
+@keyframes movelogo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.FadeIn {
+  animation-name: fadeinTitle;
+  animation-duration: 1s;
+}
+@keyframes fadeinTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.FadeInScroll {
+  animation-name: fadeinTitle;
+  animation-duration: 2s;
+}
+.MobileOnly {
+  display: none;
+}
+@keyframes fadeinTitle {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.SectionGrey {
+  background-color: #f3f3f3; /* SectionGrey */
+}
+
+/* VERY LARGE MONITORS: */
+@media (min-width: 1400px) {
+  .LogoBox {
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ***** MOBILE ***** */
+@media (max-width: 700px) {
+  .ImageContainer h2 {
+    width: 100%;
+    border-radius: 0;
+    font-size: 1.8em;
+    line-height: 1em;
+    font-weight: normal;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.7);
+  }
+  .MobileOnly {
+    display: inline;
+  }
+  .GridInformacoes {
+    display: inline;
+  }
+  .GridContatoBox {
+    /* display: grid; */
+    grid-template-columns: 100%;
+  }
+}

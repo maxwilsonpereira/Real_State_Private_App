@@ -1,0 +1,101 @@
+.BtnDisabled {
+  cursor: default;
+}
+.BtnYellow {
+  color: white !important;
+  padding: 8px 22px;
+  font-size: 1.4em;
+  border-radius: 10px;
+  background-color: #e8ba3c;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #9b7c26;
+  transition: 0.3s;
+}
+.BtnYellow:hover {
+  cursor: pointer;
+  color: #e8ba3c !important;
+  background-color: white;
+  transform: translateY(-2%);
+}
+.BtnGreen {
+  color: white !important;
+  padding: 8px 22px;
+  font-size: 1.4em;
+  border-radius: 10px;
+  background-color: #31ae75;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #238d5d;
+  transition: 0.3s;
+}
+.BtnGreen:hover {
+  cursor: pointer;
+  color: #31ae75 !important;
+  background-color: white;
+  transform: translateY(-2%);
+}
+.BtnRed {
+  color: white !important;
+  padding: 8px 22px;
+  font-size: 1.4em;
+  border-radius: 10px;
+  background-color: #8f2c31;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #5d161a;
+  transition: 0.3s;
+}
+.BtnRed:hover {
+  cursor: pointer;
+  color: #8f2c31 !important;
+  background-color: white;
+  transform: translateY(-2%);
+}
+.BtnGold {
+  color: white;
+  padding: 5px 18px;
+  font-size: 1.4em;
+  border-radius: 8px;
+  background-color: #ae6e3d; /* For browsers that do not support gradients */
+  background-image: linear-gradient(
+    #ae6e3d,
+    #5c361a
+  ); /* Standard syntax (must be last) */
+
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #9b7c26;
+  transition: 0.3s;
+}
+.BtnGold:hover {
+  cursor: pointer;
+  color: #ae6e3d;
+  background-color: white;
+  background-image: linear-gradient(
+    #ffffff,
+    #ffffff
+  ); /* Standard syntax (must be last) */
+  transform: translateY(-2%);
+}
+
+.colorsWebSite {
+  color: #ae6e3d; /* GOLD FONT */
+  color: #63fbe5;
+  color: #8f2c31;
+  color: #0155a0; /* hover */
+  color: #4d7994; /* Section Title */
+  color: #444444;
+  color: #fb5f2e; /* DISCOUNT */
+  background-color: #31ae75;
+  color: #e8ba3c;
+  background-color: #145a83; /* Comprar Declaração Box */
+  background-color: #033959; /* FOOTER */
+  background-color: #f3f3f3; /* SectionGrey */
+  background-color: #535353; /* SectionGreyDark */
+  background-color: #145a83; /* SectionBlueDark */
+}

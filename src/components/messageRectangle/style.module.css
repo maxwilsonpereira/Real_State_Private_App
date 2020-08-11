@@ -1,0 +1,33 @@
+.blue {
+  padding: 70px 40px;
+  color: #ae6e3d;
+  text-align: center;
+  font-family: objektiv-mk2;
+  background: rgb(201, 200, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 200, 200, 1) 0%,
+    rgba(243, 243, 243, 1) 25%,
+    rgba(243, 243, 243, 1) 64%,
+    rgba(201, 200, 200, 1) 100%
+  );
+}
+
+.containerApp {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5em;
+  animation-name: textanimation;
+  animation-duration: 1.5s;
+}
+/* @keyframes textanimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+} */
